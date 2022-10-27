@@ -1,0 +1,14 @@
+<form (submit)="onAddPost(addPost)" #addPost="ngForm">
+
+    <!-- user inputs -->
+    <input type="text" ngModel name="enteredID" placeholder="Fruit ID" required minlength="1"
+        pattern="^[a-zA-Z0-9\s_-]+$" #enteredID="ngModel" />
+
+    <input type="text" ngModel name="enteredName" placeholder="Fruit Name" required minlength="1"
+        pattern="^[a-zA-Z0-9\s_-]+$" #enteredName="ngModel" />
+
+    <!-- button -->
+    <button type="submit">Add Fruit</button>
+
+
+</form>
