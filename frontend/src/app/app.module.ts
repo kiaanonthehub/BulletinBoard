@@ -10,13 +10,17 @@ import { PostDisplayComponent } from './post/post-display/post-display.component
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // import { AppRoutingModule } from './app-routing.module';
-// import { AuthInterceptor } from './auth/auth.interceptor';
+ import { AuthInterceptor } from './auth/auth.interceptor';
+import { LoginComponent } from './auth/login/login/login.component';
+import { SignupComponent } from './auth/signup/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
-    PostDisplayComponent
+    PostDisplayComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     HttpClientModule,
     // AppRoutingModule
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
