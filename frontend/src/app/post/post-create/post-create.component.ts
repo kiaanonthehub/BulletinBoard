@@ -23,7 +23,7 @@ export class PostCreateComponent implements OnInit {
     alert(postForm.value.enteredID + ':' + postForm.value.enteredName)
 
     // http post
-    this.postservice.addPostService(postForm.value.enteredID, postForm.value.enteredName)
-    postForm.resetForm()
+    // this.postservice.addPostService(postForm.value., postForm.value.enteredName)
+    // postForm.resetForm()
   }
 }

@@ -5,14 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './post/post-create/post-create.component';
 import { PostDisplayComponent } from './post/post-display/post-display.component';
-// import { LoginComponent } from './auth/login/login.component';
-
+import { LoginComponent } from '../../src/app/auth/login/login.component';
+import { SignupComponent } from '../../src/app/auth/signup/signup.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // import { AppRoutingModule } from './app-routing.module';
  import { AuthInterceptor } from './auth/auth.interceptor';
-import { LoginComponent } from './auth/login/login/login.component';
-import { SignupComponent } from './auth/signup/signup/signup.component';
 
 @NgModule({
   declarations: [

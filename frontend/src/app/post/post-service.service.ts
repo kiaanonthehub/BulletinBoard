@@ -13,8 +13,8 @@ export class PostServiceService {
   constructor(public http: HttpClient) { }
 
   // service to write new post
-  addPostService(pid: string, pname: string) {
-    this.http.post<{ message: string, post: any }>('https://localhost:3000/api/post', { id: pid, name: pname })
+  addPostService(username: string, date: string, department:string, postContent:string) {
+    this.http.post<{ message: string, post: any }>('https://localhost:3000/api/post', { _username: username, _date: date, _department:department, _postContent:postContent })
       .subscribe((thePost) => {
         this.postdisplay.push(thePost.post);
         this.updatedPostDisplay.next([...this.postdisplay]);
