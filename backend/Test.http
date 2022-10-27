@@ -1,0 +1,40 @@
+### SIGN UP - This will demonstrate the /api/user/signup post request
+POST  https://localhost:3000/api/user/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "st10116983",
+    "password": "Huntshop44",
+    "department": "HR"
+}
+### LOGIN - This will demonstrate the /api/user/login post request
+POST https://localhost:3000/api/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "username":   "st10116983",
+    "password": "Huntshop44"
+}
+
+
+### CREATE POST - This will demonstrate the /api/post post request
+POST https://localhost:3000/api/posts HTTP/1.1
+content-type: application/json
+Authorization: Bearer <token>
+
+{
+    "username":   "st10116983",
+    "date": "26-09-2022",
+    "department": "HR",
+    "postContent":"This is another test post."
+}
+
+
+### GET POSTS - This will demonstrate the /api/post get request
+GET https://localhost:3000/api/posts HTTP/1.1
+
+
+### DELETE POST - This will demonstrate the /api/post/{id} delete request
+DELETE https://localhost:3000/api/posts/633c96f4b5ca1eda703ef3fb 
+Authorization: Bearer <token>
+

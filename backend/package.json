@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A MEAN stack application developed utilising MongoDB, Express.js, Angular 14 and Node.js. This application demonstrates the use of security principles used in industry projects. OpenSSL has been intergrated with the use of HTTPS.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4",
+    "mongoose-unique-validator": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiaanonthehub/backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiaanonthehub/backend/issues"
+  },
+  "homepage": "https://github.com/kiaanonthehub/backend#readme"
+}
