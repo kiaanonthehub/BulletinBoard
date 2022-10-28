@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
       alert("Invalid input, please try again")
       return;
     } else {
-      alert("WK");
+      alert("Welcome");
       this.authservice.login(loginform.value.enterusername, loginform.value.enterpassword);
     }
   }
