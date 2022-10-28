@@ -9,7 +9,7 @@ import { PostServiceService } from '../post-service.service';
 })
 
 export class PostDisplayComponent implements OnInit {
-  // private postdisplay:{ username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[] = [];
+
   posts: { username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[] = [];
 
   constructor(public postservice: PostServiceService) { }
