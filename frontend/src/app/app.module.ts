@@ -9,7 +9,7 @@ import { LoginComponent } from '../../src/app/auth/login/login.component';
 import { SignupComponent } from '../../src/app/auth/signup/signup.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-// import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
  import { AuthInterceptor } from './auth/auth.interceptor';
 
 @NgModule({
@@ -24,7 +24,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     BrowserModule,
     FormsModule,  // added to use forms and methods in fruit-create.component.html
     HttpClientModule,
-    // AppRoutingModule
+    AppRoutingModule
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
