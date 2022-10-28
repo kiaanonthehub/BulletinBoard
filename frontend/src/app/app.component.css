@@ -1,0 +1,27 @@
+a {
+    padding: 5px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    background: fixed;
+    color: cadetblue;
+    margin-right: 70px;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: cadetblue;
+    text-shadow: 5px;
+    text-align: center;
+}
+
+hr {
+    color: aliceblue;
+
+}
+
+nav {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}

@@ -1,26 +1,31 @@
 <form (submit)="onsignup(loginform)" #loginform="ngForm">
 
-    <!-- user inputs -->
+
     <input type="email" ngModel name="enterusername" placeholder="Email address" required minlength="1"
         pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" #enterusername="ngModel" />
 
-    <!--
-    How can I validate an email address using a regular expression? 
-    https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression 
--->
+
+    <br>
 
     <input type="password" ngModel name="enterpassword" placeholder="Password" required minlength="1"
         pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" #enterpassword="ngModel" />
 
-            <input type="text" ngModel name="enteredDepartment" placeholder="Department" required minlength="1"
-                pattern="^[a-zA-Z0-9\s_-]+$" #enteredName="ngModel" />
+    <br>
 
-    <!-- button -->
-    <button type="submit">Login</button>
+    <input type="text" ngModel name="enteredDepartment" placeholder="Department" required minlength="1"
+        pattern="^[a-zA-Z0-9\s_-]+$" #enteredName="ngModel" />
 
-    <!-- 
-    Regex for password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters
-    https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
- -->
+    <br>
+
+    <button type="submit">Sign up</button>
+
 
 </form>
+
+<!-- 
+How can I validate an email address using a regular expression? 
+https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression 
+
+Regex for password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters
+https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a 
+-->

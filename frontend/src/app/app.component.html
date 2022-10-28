@@ -1,5 +1,35 @@
-<app-post-create></app-post-create>
+<!DOCTYPE html>
+<html lang="en">
 
-<hr>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-<app-post-display></app-post-display>
+<body>
+
+    <main>
+        <div>
+            <h1>Bulletin Board</h1>
+            <hr>
+        </div>
+
+        <nav>
+            <a routerLink="/login">Login</a>
+
+            <a routerLink="/signup">Signup</a>
+
+            <a routerLink="/add">Add</a>
+
+            <a routerLink="/">List</a>
+
+        </nav>
+        <hr>
+        <br>
+        <router-outlet></router-outlet>
+    </main>
+</body>
+
+</html>
