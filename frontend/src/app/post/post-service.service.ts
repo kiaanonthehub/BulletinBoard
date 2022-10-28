@@ -7,18 +7,20 @@ import { Subject } from 'rxjs';
 })
 export class PostServiceService {
 
-  private postdisplay:
-    { username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[] = [];
-  private updatedPostDisplay = new Subject<
-    { username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[]>();
+  // private postdisplay: { _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string }[] = [];
+  // private updatedPostDisplay = new Subject<{ _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string }[]>();
+
+  private postdisplay: { _id: string, _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string, __v: string }[] = [];
+  private updatedPostDisplay = new Subject<{ _id: string, _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string, __v: string }[]>();
+  
 
   constructor(public http: HttpClient) { }
 
   // service to write new post
-  addPostService(username: string, _date: string, department:string, postContent:string) {
-    this.http.post<{ message: string, post: any }>('https://localhost:3000/api/posts', { _username: username, _date: _date, _department:department, _postContent:postContent })
+  addPostService(pusername: string, pdate: string, pdepartment:string, ppostContent:string) {
+    this.http.post<{ message: string, posts: any }>('https://localhost:3000/api/posts', { username: pusername, date: pdate, department:pdepartment, postContent:ppostContent })
       .subscribe((thePost) => {
-        this.postdisplay.push(thePost.post);
+        this.postdisplay.push(thePost.posts);
         this.updatedPostDisplay.next([...this.postdisplay]);
       })
   }
@@ -36,7 +38,7 @@ export class PostServiceService {
   deletePostService(postID: string) {
     this.http.delete('https://localhost:3000/api/posts/' + postID)
       .subscribe(() => {
-        const updatedPostDeleted = this.postdisplay.filter(post => post.username !== postID);
+        const updatedPostDeleted = this.postdisplay.filter(post => post._id !== postID);
         this.postdisplay = updatedPostDeleted;
         this.updatedPostDisplay.next([...this.postdisplay]);
       })

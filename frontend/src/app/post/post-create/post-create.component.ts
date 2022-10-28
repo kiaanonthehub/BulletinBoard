@@ -20,10 +20,10 @@ export class PostCreateComponent implements OnInit {
       alert('Invalid')
       return
     }
-    alert(postForm.value.enteredID + ':' + postForm.value.enteredName)
+    alert(postForm.value.username + " has been saved.")
 
     // http post
-    // this.postservice.addPostService(postForm.value., postForm.value.enteredName)
-    // postForm.resetForm()
+    this.postservice.addPostService(postForm.value.username, postForm.value.date, postForm.value.department, postForm.value.postContent)
+    postForm.resetForm()
   }
 }
