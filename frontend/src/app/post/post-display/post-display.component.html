@@ -1,6 +1,8 @@
 <div *ngFor="let post of posts">
-    {{post.id}}
-    {{post.name}}
+    {{post.username}}
+    {{post.date}}
+    {{post.department}}
+    {{post.postContent}}
 
-    <button (click)="onDelete(post._id)">Delete</button>
+    <button (click)="onDelete(post.username)">Delete</button>
 </div>

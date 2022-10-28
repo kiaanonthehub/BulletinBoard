@@ -9,8 +9,8 @@ import { PostServiceService } from '../post-service.service';
 })
 
 export class PostDisplayComponent implements OnInit {
-
-  posts: { _id: string, id: string, name: string, __v: string }[] = [];
+  // private postdisplay:{ username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[] = [];
+  posts: { username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[] = [];
 
   constructor(public postservice: PostServiceService) { }
 
@@ -19,7 +19,7 @@ export class PostDisplayComponent implements OnInit {
   ngOnInit(): void {
     this.postservice.getPostService();
     this.postSubscription = this.postservice.getUpdatedListener()
-      .subscribe((posts: { _id: string, id: string, name: string, __v: string }[]) => {
+      .subscribe((posts: { username: string, _username: string, date: string, _date: string, department: string, _department: string, postContent: string, _postContent: string }[]) => {
         this.posts = posts;
       });
   }
@@ -28,7 +28,7 @@ export class PostDisplayComponent implements OnInit {
     this.postSubscription.unsubscribe();
   }
 
-  onDelete(fruitid: string) {
-    this.postservice.deletePostService(fruitid);
+  onDelete(postID: string) {
+    this.postservice.deletePostService(postID);
   }
 }
