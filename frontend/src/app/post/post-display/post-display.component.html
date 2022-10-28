@@ -1,8 +1,13 @@
 <div *ngFor="let post of posts">
     {{post.username}}
+    <br>
     {{post.date}}
+    <br>
     {{post.department}}
+    <br>
     {{post.postContent}}
-
+    <br>
     <button (click)="onDelete(post.username)">Delete</button>
+<hr>
+<br>
 </div>
