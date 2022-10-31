@@ -3,17 +3,19 @@
 
     <input type="email" ngModel name="enterusername" placeholder="Email address" required minlength="1"
         pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" #enterusername="ngModel" />
-
+    <div *ngIf="enterusername.invalid && (enterusername.dirty || enterusername.touched)">invalid</div>
 
     <br>
 
     <input type="password" ngModel name="enterpassword" placeholder="Password" required minlength="1"
         pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" #enterpassword="ngModel" />
+    <div *ngIf="enterpassword.invalid && (enterpassword.dirty || enterpassword.touched)">invalid</div>
 
     <br>
 
     <input type="text" ngModel name="enteredDepartment" placeholder="Department" required minlength="1"
-        pattern="^[a-zA-Z0-9\s_-]+$" #enteredName="ngModel" />
+        pattern="^[a-zA-Z0-9\s_-]+$" #enteredDepartment="ngModel" />
+    <div *ngIf="enteredDepartment.invalid && (enteredDepartment.dirty || enteredDepartment.touched)">invalid</div>
 
     <br>
 
