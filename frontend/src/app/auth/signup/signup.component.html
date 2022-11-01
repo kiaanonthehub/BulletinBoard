@@ -1,28 +1,84 @@
-<form (submit)="onsignup(loginform)" #loginform="ngForm">
+<br>
+<mat-card>
+    <form (submit)="onsignup(loginform)" #loginform="ngForm">
+        <h2>Sign Up</h2>
+
+        <p>If you are already registered, please <a [routerLink]="['/']" routerLinkActive="router-link-active">Log
+                In</a>.</p>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput type="text" placeholder="Username" ngModel name="enterusername" required minlength="3"
+                maxlength="32" pattern="^([a-zA-Z0-9\s_-]+)$" #enterusername="ngModel" />
+            <mat-hint align="end">{{enterusername.value.length}} / 32</mat-hint>
+            <mat-error *ngIf="enterusername.invalid">{{ usernameError }}</mat-error>
+        </mat-form-field>
+
+        <br>
 
 
-    <input type="email" ngModel name="enterusername" placeholder="Email address" required minlength="1"
-        pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" #enterusername="ngModel" />
-    <div *ngIf="enterusername.invalid && (enterusername.dirty || enterusername.touched)">invalid</div>
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="password" ngModel name="enterpassword" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}" #enterpassword="ngModel" />
+            <mat-error *ngIf="enterpassword.invalid">{{ passwordError }}</mat-error>
+        </mat-form-field>
 
-    <br>
+        <br>
 
-    <input type="password" ngModel name="enterpassword" placeholder="Password" required minlength="1"
-        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" #enterpassword="ngModel" />
-    <div *ngIf="enterpassword.invalid && (enterpassword.dirty || enterpassword.touched)">invalid</div>
+        <mat-form-field appearance="fill">
+            <mat-label>Department</mat-label>
+            <mat-select name="enteredDepartment" ngModel #enteredDepartment="ngModel" required>
 
-    <br>
+                <mat-option value="Agriculture, Land Reform and Rural Development">Agriculture, Land Reform and Rural Development++++</mat-option>
+                <mat-option value="Basic Education">Basic Education</mat-option>
+                <mat-option value="Civilian Secretariat for Police">Civilian Secretariat for Police</mat-option>
+                <mat-option value="Communications and Digital Technologies">Communications and Digital Technologies</mat-option>
+                <mat-option value="Cooperative Governance and Traditional Affairs">Cooperative Governance and Traditional Affairs</mat-option>
+                <mat-option value="Correctional Services">Correctional Services</mat-option>
+                <mat-option value="Defence">Defence</mat-option>
+                <mat-option value="Employment and Labour">Employment and Labour</mat-option>
+                <mat-option value="Forestry, Fisheries and the Environment">Forestry, Fisheries and the Environment</mat-option>
+                <mat-option value="Government Communication and Information System (GCIS)">Government Communication and Information System (GCIS)</mat-option>
+                <mat-option value="Higher Education and Training">Higher Education and Training</mat-option>
+                <mat-option value="Home Affairs">Home Affairs</mat-option>
+                <mat-option value="Human Settlements">Human Settlements</mat-option>
+                <mat-option value="Independent Police Investigative Directorate">Independent Police Investigative Directorate</mat-option>
+                <mat-option value="International Relations and Cooperation">International Relations and Cooperation</mat-option>
+                <mat-option value="Justice and Constitutional Development">Justice and Constitutional Development</mat-option>
+                <mat-option value="Military Veterans">Military Veterans</mat-option>
+                <mat-option value="Mineral Resources and Energy">Mineral Resources and Energy</mat-option>
+                <mat-option value="National School of Government">National School of Government</mat-option>
+                <mat-option value="National Treasury">National Treasury</mat-option>
+                <mat-option value="Office of the Chief Justice">Office of the Chief Justice</mat-option>
+                <mat-option value="Planning Monitoring and Evaluation">Planning Monitoring and Evaluation</mat-option>
+                <mat-option value="Public Enterprises">Public Enterprises</mat-option>
+                <mat-option value="Public Service and Administration">Public Service and Administration</mat-option>
+                <mat-option value="Public Service Commission">Public Service Commission</mat-option>
+                <mat-option value="Public Works and Infrastructure">Public Works and Infrastructure</mat-option>
+                <mat-option value="Science and Innovation">Science and Innovation</mat-option>
+                <mat-option value="Small Business Development">Small Business Development</mat-option>
+                <mat-option value="Social Development">Social Development</mat-option>
+                <mat-option value="SA Police Service">SA Police Service</mat-option>
+                <mat-option value="SA Revenue Service">SA Revenue Service</mat-option>
+                <mat-option value="State Security Agency">State Security Agency</mat-option>
+                <mat-option value="Sport, Arts and Culture">Sport, Arts and Culture</mat-option>
+                <mat-option value="Statistics South Africa">Statistics South Africa</mat-option>
+                <mat-option value="Trade, Industry and Competition">Trade, Industry and Competition</mat-option>
+                <mat-option value="Transport">Transport</mat-option>
+                <mat-option value="Water and Sanitation">Water and Sanitation</mat-option>
+                <mat-option value="Women, Youth and Persons with Disabilities">Women, Youth and Persons with Disabilities</mat-option>
+                <mat-option value="The Presidency">The Presidency</mat-option>
+            </mat-select>
+            <mat-error *ngIf="enteredDepartment.invalid">Select a Department</mat-error>
+        </mat-form-field>
 
-    <input type="text" ngModel name="enteredDepartment" placeholder="Department" required minlength="1"
-        pattern="^[a-zA-Z0-9\s_-]+$" #enteredDepartment="ngModel" />
-    <div *ngIf="enteredDepartment.invalid && (enteredDepartment.dirty || enteredDepartment.touched)">invalid</div>
-
-    <br>
-
-    <button type="submit">Sign up</button>
+        <button type="submit">Sign up</button>
 
 
-</form>
+    </form>
+</mat-card>
+
 
 <!-- 
 How can I validate an email address using a regular expression? 

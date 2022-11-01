@@ -1,22 +1,39 @@
-<form (submit)="onlogin(loginform)" #loginform="ngForm">
+<br>
+<mat-card>
 
+    <form (submit)="onlogin(loginform)" #loginform="ngForm">
 
-    <input type="email" ngModel name="enterusername" placeholder="Email address" required minlength="1"
-        pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" #enterusername="ngModel" />
-    <div *ngIf="enterusername.invalid && (enterusername.dirty || enterusername.touched)">invalid</div>
+        <h2>Log In</h2>
 
-    <br>
+        <p>Please Log in to view Bulletin Posts</p>
 
-    <input type="password" ngModel name="enterpassword" placeholder="Password" required minlength="1"
-        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" #enterpassword="ngModel" />
-    <div *ngIf="enterpassword.invalid && (enterpassword.dirty || enterpassword.touched)">invalid</div>
+        <p>If you are not registered, please <a [routerLink]="['/signup']" routerLinkActive="router-link-active">Sign
+                Up</a>.
+        </p>
 
-    <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput type="email" placeholder="Email" ngModel name="enterusername" required
+                pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" #enterusername="ngModel" />
 
-    <button type="submit">Login</button>
+            <mat-error *ngIf="enterusername.invalid">{{ emailError }}</mat-error>
+        </mat-form-field>
 
+        <br>
 
-</form>
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="password" ngModel name="enterpassword" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}" #enterpassword="ngModel" />
+            <mat-error *ngIf="enterpassword.invalid">{{ passwordError }}</mat-error>
+        </mat-form-field>
+
+        <br>
+
+        <button mat-raised-button color="primary" type="submit">Login</button>
+
+    </form>
+</mat-card>
 
 
 <!-- 
