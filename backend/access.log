@@ -112,3 +112,11 @@ REQ	| DATE -> 01/Nov/2022:22:09:11 +0000	| METHOD -> OPTIONS| URL -> /api/posts	
 RES	| DATE -> 01/Nov/2022:22:09:11 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 4.397 ms
 REQ	| DATE -> 01/Nov/2022:22:09:11 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
 RES	| DATE -> 01/Nov/2022:22:09:11 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 54.935 ms
+REQ	| DATE -> 01/Nov/2022:22:31:35 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 01/Nov/2022:22:31:35 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 3.102 ms
+REQ	| DATE -> 01/Nov/2022:22:31:35 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 01/Nov/2022:22:31:35 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 48.053 ms
+REQ	| DATE -> 01/Nov/2022:22:34:49 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 01/Nov/2022:22:34:49 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 1.112 ms
+REQ	| DATE -> 01/Nov/2022:22:34:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 01/Nov/2022:22:34:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 54.633 ms
