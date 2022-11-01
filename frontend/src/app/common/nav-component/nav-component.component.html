@@ -1,0 +1,23 @@
+<div style="text-align: center;">
+    <nav class="nav">
+        <!-- <div class="nav-item ">
+            <button *ngIf="!isLoggedIn" mat-raised-button color="accent" [routerLink]="['/']"
+                routerLinkActive="router-link-active">Log In</button>
+        </div>
+        <div *ngIf="!isLoggedIn" class="nav-item">
+            <button mat-raised-button color="accent" [routerLink]="['/signup']"
+                routerLinkActive="router-link-active">Sign Up</button>
+        </div> -->
+        <div *ngIf="isLoggedIn" class="nav-item">
+            <button mat-raised-button color="accent" [routerLink]="['/add']"
+                routerLinkActive="router-link-active">Create Post</button>
+        </div>
+        <div *ngIf="isLoggedIn" class="nav-item">
+            <button mat-raised-button color="accent" [routerLink]="['/posts']"
+                routerLinkActive="router-link-active">View Posts</button>
+        </div>
+        <div *ngIf="isLoggedIn" class="nav-item">
+            <button mat-raised-button color="accent" (click)="onLogout()">Log Out</button>
+        </div>
+    </nav>
+</div>

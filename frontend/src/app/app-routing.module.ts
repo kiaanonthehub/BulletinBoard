@@ -9,7 +9,8 @@ import { SignupComponent } from '../../src/app/auth/signup/signup.component';
 
 
 const routes: Routes = [
-    { path: '', component: PostDisplayComponent },
+    { path: '', component: LoginComponent },
+    { path: 'posts', component: PostDisplayComponent },
     { path: 'add', component: PostCreateComponent },
     { path: 'login', component: LoginComponent },
     { path: 'signup', component: SignupComponent },

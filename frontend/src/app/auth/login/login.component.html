@@ -12,9 +12,9 @@
         </p>
 
         <mat-form-field appearance="fill">
-            <mat-label>Username</mat-label>
-            <input matInput type="email" placeholder="Email" ngModel name="enterusername" required
-                pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" #enterusername="ngModel" />
+            <mat-label>Email address</mat-label>
+            <input matInput type="email" placeholder="Email address" ngModel name="enterusername" required
+                  pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" #enterusername="ngModel" />
 
             <mat-error *ngIf="enterusername.invalid">{{ emailError }}</mat-error>
         </mat-form-field>

@@ -8,8 +8,8 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Username</mat-label>
-            <input matInput type="text" placeholder="Username" ngModel name="enterusername" required minlength="3"
-                maxlength="32" pattern="^([a-zA-Z0-9\s_-]+)$" #enterusername="ngModel" />
+            <input matInput type="email" placeholder="Email address" ngModel name="enterusername" required minlength="3"
+                maxlength="32"  pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" #enterusername="ngModel" />
             <mat-hint align="end">{{enterusername.value.length}} / 32</mat-hint>
             <mat-error *ngIf="enterusername.invalid">{{ usernameError }}</mat-error>
         </mat-form-field>
@@ -29,7 +29,7 @@
         <mat-form-field appearance="fill">
             <mat-label>Department</mat-label>
             <mat-select name="enteredDepartment" ngModel #enteredDepartment="ngModel" required>
-                <mat-option value="Agriculture, Land Reform and Rural Development">Agriculture, Land Reform and Rural Development++++</mat-option>
+                <mat-option value="Agriculture, Land Reform and Rural Development">Agriculture, Land Reform and Rural Development</mat-option>
                 <mat-option value="Basic Education">Basic Education</mat-option>
                 <mat-option value="Civilian Secretariat for Police">Civilian Secretariat for Police</mat-option>
                 <mat-option value="Communications and Digital Technologies">Communications and Digital Technologies</mat-option>

@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+        .nav-item {
+            display: flex;
+        }
+    
+        .mat-button-base {
+            margin: 8px 8px 8px 0;
+            width: 200px;
+            background: aliceblue;
+        }
