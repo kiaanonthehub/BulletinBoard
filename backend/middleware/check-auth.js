@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
     console.log("Token Verified");
     next();
   } catch (error) {
-    console.log("Token Error");
+    console.log("Error with Token [Middleware]");
     res.status(401).json({
       message: "Unauthorized Request",
     });

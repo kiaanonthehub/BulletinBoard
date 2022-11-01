@@ -1,5 +1,8 @@
 const app = require("./app");
 
+// debugging
+const debug = require("debug")("node-angular");
+
 // HTTPS is the HTTP protocol over TLS/SSL
 const http = require("https");
 

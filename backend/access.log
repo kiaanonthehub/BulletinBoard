@@ -1,0 +1,4 @@
+REQ	| DATE -> 01/Nov/2022:10:21:53 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 01/Nov/2022:10:21:53 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 3.162 ms
+REQ	| DATE -> 01/Nov/2022:10:21:53 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"P@ssword1","department":"HR"}
+RES	| DATE -> 01/Nov/2022:10:21:53 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 500	| RESPONSE TIME -> 129.985 ms

@@ -11,8 +11,13 @@ const bcrypt = require("bcrypt");
 // used for managing user sessions,
 const jwt = require("jsonwebtoken");
 
+// brute force protection
+const ExpressBrute = require("express-brute");
+const store = new ExpressBrute.MemoryStore();
+const bruteforce = new ExpressBrute(store);
+
 // post method used for registering user
-router.post("/signup", (req, res) => {
+router.post("/signup", bruteforce.prevent, (req, res) => {
   // hashing the users password
   bcrypt.hash(req.body.password, 10).then((hash) => {
     const user = new User({
@@ -21,9 +26,6 @@ router.post("/signup", (req, res) => {
       department: req.body.department,
     });
 
-    console.log("user created");
-    console.log(user);
-
     user
       .save()
       .then((result) => {
@@ -31,17 +33,19 @@ router.post("/signup", (req, res) => {
           message: "User created",
           result: result,
         });
+        console.log("user created\n" + result);
       })
       .catch((err) => {
         res.status(500).json({
           error: err,
         });
+        console.log(err.message);
       });
   });
 });
 
 // post methdd used for user login
-router.post("/login", (req, res) => {
+router.post("/login", bruteforce.prevent, (req, res) => {
   let fetchedUser;
 
   // checks the database to see if the username exists
@@ -105,5 +109,6 @@ ExpressJs - https://expressjs.com/en/starter/hello-world.html
 JSON - https://www.json.org/json-en.html
 Mongoose - https://mongoosejs.com
 Mozilla - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-
+NpmJs [Brute] - https://www.npmjs.com/package/express-brute
+NpmJs [Unique Validator]  -https://www.npmjs.com/package/mongoose-unique-validator
 */

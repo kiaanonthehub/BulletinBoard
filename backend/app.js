@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express();
 
+//helmet
+const helmet = require("helmet");
 // path for url
 const urlPrefix = "/api";
 
@@ -25,6 +27,17 @@ const connectionString =
 const postRoutes = require("./routes/posts");
 const userRoutes = require("./routes/users");
 
+//morgan for logging
+const path = require("path");
+const morgan = require("morgan");
+
+// body parser
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
+
+app.use(helmet());
+
 // connects to mongodb
 mongoose
   .connect(connectionString)
@@ -36,6 +49,42 @@ mongoose
   }, options);
 
 app.use(express.json());
+
+let accessLogStream = fs.createWriteStream(path.join(__dirname, "access.log"), {
+  flags: "a",
+});
+
+//morgan token to log the body of a request
+morgan.token("tbody", (req) => {
+  let string = "";
+  if (req.body) {
+    string += `REQ BODY -> ${JSON.stringify(req.body)}`;
+  }
+  return string;
+});
+
+//Logs requests to a log file
+//app.use(morgan('DATE -> :date[clf]\t| METHOD -> :method| URL -> :url\t| STATUS -> :status\t| RESPONSE TIME -> :response-time ms\t|BODY -> :tbody', { stream: accessLogStream }));
+//Logs requests
+app.use(
+  morgan(
+    "REQ\t| DATE -> :date[clf]\t| METHOD -> :method| URL -> :url\t| STATUS -> :status\t| RESPONSE TIME -> :response-time ms\t|BODY -> :tbody",
+    {
+      immediate: true,
+      stream: accessLogStream,
+    }
+  )
+);
+
+// Logs responses
+app.use(
+  morgan(
+    "RES\t| DATE -> :date[clf]\t| METHOD -> :method| URL -> :url\t| STATUS -> :status\t| RESPONSE TIME -> :response-time ms",
+    {
+      stream: accessLogStream,
+    }
+  )
+);
 
 // catering for CORS
 // allows the front end to call the backend
