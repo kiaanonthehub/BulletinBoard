@@ -10,7 +10,7 @@ a {
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: cadetblue;
+    color: white;
     text-shadow: 5px;
     text-align: center;
 }
@@ -24,5 +24,9 @@ nav {
     margin: auto;
     overflow: hidden;
     text-align: center;
+}
+
+mat-toolbar{
+    background-color: #303f9f;
 }
 

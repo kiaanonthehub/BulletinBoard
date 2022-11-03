@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     align-content: space-between;
-    background-color: black;
+    background-color: #3f51b5;
 }
 
         .nav-item {
@@ -14,5 +14,7 @@
          .mat-button-base {
             margin: 8px 8px 8px 0;
             width: 200px;
-            background: aliceblue;
+            color: white;
+            background-color: white;
+            color: black;
         }
