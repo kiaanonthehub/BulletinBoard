@@ -25,17 +25,24 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
   }
- 
+
   onsignup(signupform: NgForm) {
     if (signupform.invalid) {
       return;
     } else {
-      
+
       this.authservice.signup(
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enterusername),
-        this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enterpassword ),
+        this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enterpassword),
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enteredDepartment)
       );
     }
   }
 }
+
+/* 
+Nitish Kaushik 
+Create Show / Hide password in Angular with Angular Material
+https://nitishkaushik.com/show-hide-password-in-angular-with-angular-material/
+November 13, 2021
+*/

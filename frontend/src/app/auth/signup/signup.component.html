@@ -16,11 +16,11 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Password</mat-label>
-            <input 
-             matInput [type]="showPassword ? 'text' : 'password'" 
-            matInput type="password" placeholder="password" ngModel name="enterpassword" required
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}" #enterpassword="ngModel" />
-            <mat-icon matSuffix (click)="togglePasswordVisibility()">{{showPassword?'visibility_off':'visibility'}}</mat-icon>
+            <input matInput [type]="showPassword ? 'text' : 'password'" matInput type="password" placeholder="password"
+                ngModel name="enterpassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}"
+                #enterpassword="ngModel" />
+            <mat-icon matSuffix (click)="togglePasswordVisibility()">{{showPassword?'visibility_off':'visibility'}}
+            </mat-icon>
             <mat-error *ngIf="enterpassword.invalid">{{ passwordError }}</mat-error>
         </mat-form-field>
 
@@ -97,4 +97,7 @@ https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-u
 
 Regex for password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters
 https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a 
+
+Create Show/Hide password in Angular with Angular Material
+https://nitishkaushik.com/show-hide-password-in-angular-with-angular-material/
 -->

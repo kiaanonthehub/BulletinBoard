@@ -36,3 +36,10 @@ export class LoginComponent implements OnInit {
     }
   }
 }
+
+/* 
+Nitish Kaushik 
+Create Show / Hide password in Angular with Angular Material
+https://nitishkaushik.com/show-hide-password-in-angular-with-angular-material/
+November 13, 2021
+*/
