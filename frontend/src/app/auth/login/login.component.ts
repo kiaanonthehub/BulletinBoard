@@ -16,6 +16,12 @@ export class LoginComponent implements OnInit {
   emailError: string = 'Please enter a valid email address';
   passwordError: string = 'Enter your password';
 
+  public showPassword: boolean = false;
+
+  public togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword;
+  }
+
   ngOnInit(): void {
   }
 

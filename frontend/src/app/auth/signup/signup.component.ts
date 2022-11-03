@@ -16,6 +16,13 @@ export class SignupComponent implements OnInit {
 
   constructor(public authservice: AuthServiceService, private router: Router, private sanitizer: DomSanitizer) { }
 
+
+  public showPassword: boolean = false;
+
+  public togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword;
+  }
+
   ngOnInit(): void {
   }
  

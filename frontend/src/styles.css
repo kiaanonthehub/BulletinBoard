@@ -13,13 +13,21 @@ body {
 }
 
 a {
-    color: #303030;
-    text-decoration: none;
+    color: #303f9f;
+    font-weight: 600;
 }
 
 mat-card {
     margin-left: 10%;
     margin-right: 10%;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

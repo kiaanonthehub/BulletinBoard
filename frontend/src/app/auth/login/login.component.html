@@ -3,18 +3,16 @@
 
     <form (submit)="onlogin(loginform)" #loginform="ngForm">
 
-        <h2>Log In</h2>
+        <h2>Log In Page </h2>
 
         <p>Please Log in to view Bulletin Posts</p>
 
-        <p>If you are not registered, please <a [routerLink]="['/signup']" routerLinkActive="router-link-active">Sign
-                Up</a>.
-        </p>
+
 
         <mat-form-field appearance="fill">
             <mat-label>Email address</mat-label>
             <input matInput type="email" placeholder="Email address" ngModel name="enterusername" required
-                  pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" #enterusername="ngModel" />
+                pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" #enterusername="ngModel" />
 
             <mat-error *ngIf="enterusername.invalid">{{ emailError }}</mat-error>
         </mat-form-field>
@@ -23,14 +21,23 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Password</mat-label>
-            <input matInput type="password" placeholder="password" ngModel name="enterpassword" required
+            <input 
+            
+            matInput [type]="showPassword ? 'text' : 'password'" 
+
+            matInput type="password" placeholder="password" ngModel name="enterpassword" required
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}" #enterpassword="ngModel" />
+                    <mat-icon matSuffix (click)="togglePasswordVisibility()">{{showPassword?'visibility_off':'visibility'}}</mat-icon>
             <mat-error *ngIf="enterpassword.invalid">{{ passwordError }}</mat-error>
         </mat-form-field>
 
         <br>
 
         <button mat-raised-button color="primary" type="submit">Login</button>
+        <p>or</p>
+        <p>Dont have an account? <a [routerLink]="['/signup']" routerLinkActive="router-link-active">Sign
+                Up</a>.
+        </p>
 
     </form>
 </mat-card>
