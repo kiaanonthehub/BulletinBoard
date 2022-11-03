@@ -5,6 +5,9 @@ import { NgForm } from '@angular/forms';
 import { PostServiceService } from '../post-service.service';
 
 import { DomSanitizer } from '@angular/platform-browser';
+
+import { Subscription } from 'rxjs';
+import { AuthServiceService } from '../../auth/auth-service.service';
 @Component({
   selector: 'app-post-create',
   templateUrl: './post-create.component.html',
@@ -12,11 +15,16 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class PostCreateComponent implements OnInit {
 
-  constructor(public postservice: PostServiceService, protected sanitizer: DomSanitizer) { }
+  constructor(public postservice: PostServiceService, protected sanitizer: DomSanitizer, public authService: AuthServiceService) { }
 
   postError: string = 'Post cannot be empty';
 
+
+  private loginSub: Subscription = new Subscription;
+  isLoggedIn: boolean = false;
+
   ngOnInit(): void {
+    this.isLoggedIn = this.authService.checkLogin();
   }
 
   onAddPost(postForm: NgForm) {

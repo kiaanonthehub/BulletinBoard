@@ -1,6 +1,6 @@
 <br>
 <mat-card>
-    <h2>Posts</h2>
+    <h2>Bulletin Board Posts</h2>
 </mat-card>
 
 <div *ngIf="posts.length < 1">
@@ -10,8 +10,15 @@
     </mat-card>
 </div>
 
+<div *ngIf="!isLoggedIn" class="status">
+    <br>
+    <mat-card>
+        <h5>[Error] : Please Log In or Sign Up to View Posts</h5>
+    </mat-card>
+</div>
+
 <br>
-<div class="card-list">
+<div *ngIf="isLoggedIn" class="card-list">
     <mat-card *ngFor="let post of posts">
         <mat-card-header>
             <mat-card-title>{{post.username}}</mat-card-title>

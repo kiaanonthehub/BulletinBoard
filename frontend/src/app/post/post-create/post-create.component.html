@@ -1,7 +1,15 @@
-
-
 <br>
 <mat-card>
+    <h2>Bulletin Board Create Posts</h2>
+</mat-card>
+<br>
+<div *ngIf="!isLoggedIn" class="status">
+    <br>
+    <mat-card>
+        <h5>[Error] : Please Log In or Sign Up to View Posts</h5>
+    </mat-card>
+</div>
+<mat-card *ngIf="isLoggedIn">
     <form (submit)="onAddPost(addPost)" #addPost="ngForm">
         <mat-form-field appearance="fill">
             <mat-label>Create Post</mat-label>
