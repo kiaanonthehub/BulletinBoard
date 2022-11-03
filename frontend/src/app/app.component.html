@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<main>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <mat-toolbar color="primary">
+        <h1 class="mat-headline">Bulletin Board</h1>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
 
-<body>
+    <app-nav-component></app-nav-component>
 
-    <main>
-        <div>
-            <h1>Bulletin Board</h1>
-
-        </div>
-        <app-nav-component></app-nav-component>
-
-
+    <div class="outlet">
         <router-outlet></router-outlet>
-    </main>
-</body>
+    </div>
 
-</html>
+</main>

@@ -24,7 +24,7 @@ export class PostCreateComponent implements OnInit {
       return
     }
     // http post
-    this.postservice.addPostService(new Date().toString(), this.sanitizer.sanitize(SecurityContext.HTML, postForm.value.postContent))
+    this.postservice.addPostService(new Date().toDateString(), this.sanitizer.sanitize(SecurityContext.HTML, postForm.value.postContent))
     postForm.resetForm()
   }
 }

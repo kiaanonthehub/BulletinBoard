@@ -16,3 +16,8 @@ a {
     color: aqua;
     text-decoration: none;
 }
+
+mat-card {
+    margin-left: 25%;
+    margin-right: 25%;
+}

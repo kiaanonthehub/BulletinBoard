@@ -1,13 +1,37 @@
-<div *ngFor="let post of posts">
-    {{post.username}}
-    <br>
-    {{post.date}}
-    <br>
-    {{post.department}}
-    <br>
-    {{post.postContent}}
-    <br>
-    <button (click)="onDelete(post._id)">Delete</button>
-<hr>
 <br>
+<mat-card>
+    <h2>Posts</h2>
+</mat-card>
+
+<div *ngIf="posts.length < 1">
+    <br>
+    <mat-card>
+        <h5>No Posts found</h5>
+    </mat-card>
 </div>
+
+<br>
+<div class="card-list">
+    <mat-card *ngFor="let post of posts">
+        <mat-card-header>
+            <mat-card-title>{{post.username}}</mat-card-title>
+            <mat-card-subtitle>Department : {{post.department}}</mat-card-subtitle>
+            <mat-card-subtitle>Date : {{post.date}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-divider></mat-divider>
+        <div>
+            <mat-card-content [innerHtml]="post.postContent"></mat-card-content>
+        </div>
+        <ng-template>
+            <mat-card-content id="mat-card">
+                {{post.postContent}}
+            </mat-card-content>
+        </ng-template>
+        <mat-divider></mat-divider>
+        <mat-card-actions align="end">
+            <button mat-stroked-button color="warn" (click)="onDelete(post._id)">Delete Post</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+<br>
