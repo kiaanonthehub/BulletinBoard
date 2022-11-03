@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SecurityContext } from '@angular/core';
 // add forms import to use NgForm
 import { NgForm } from '@angular/forms';
 // import service
@@ -24,7 +24,7 @@ export class PostCreateComponent implements OnInit {
       return
     }
     // http post
-    this.postservice.addPostService(postForm.value.username, postForm.value.date, postForm.value.department, postForm.value.postContent)
+    this.postservice.addPostService(new Date().toString(), this.sanitizer.sanitize(SecurityContext.HTML, postForm.value.postContent))
     postForm.resetForm()
   }
 }

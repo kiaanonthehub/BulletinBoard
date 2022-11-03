@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Subject } from 'rxjs';
+import { Post } from './post.model';
+import { AuthServiceService } from '../auth/auth-service.service';
+import { Router } from '@angular/router';
+import { AuthData } from '../auth/auth-data.model';
+import jwt_decode from 'jwt-decode';
 
 @Injectable({
   providedIn: 'root'
@@ -14,14 +19,30 @@ export class PostServiceService {
   private updatedPostDisplay = new Subject<{ _id: string, _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string, __v: string }[]>();
 
 
-  constructor(public http: HttpClient) { }
+  constructor(public http: HttpClient, private authService: AuthServiceService, private router: Router) { }
 
   // service to write new post
-  addPostService(pusername: string, pdate: string, pdepartment: string, ppostContent: string) {
-    this.http.post<{ message: string, posts: any }>('https://localhost:3000/api/posts', { username: pusername, date: pdate, department: pdepartment, postContent: ppostContent })
+  addPostService(pdate: string, ppostContent: string|null) {
+    
+    const token: string|undefined = this.authService.getToken();
+
+    let decodedToken: AuthData;
+    let post: Post;
+
+    if (!token) {
+      post = { username: '', department: '', date: pdate, postContent: ppostContent}
+    }
+    else {
+      //decode the token to get the signed in user's information
+      decodedToken = jwt_decode(token);
+      post = { username: decodedToken.username, department: decodedToken.department, date: pdate, postContent: ppostContent }
+    }
+
+    this.http.post<{ message: string, posts: any }>('https://localhost:3000/api/posts',  post )
       .subscribe((thePost) => {
         this.postdisplay.push(thePost.posts);
         this.updatedPostDisplay.next([...this.postdisplay]);
+        this.router.navigateByUrl('/posts');
       })
   }
 

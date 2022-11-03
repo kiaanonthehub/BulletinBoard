@@ -1,6 +1,6 @@
 export interface Post {
-    username: String;
-    date: Date;
-    department: String;
-    postContent: String;
+    username: String|null;
+    date: String;
+    department: String|null;
+    postContent: String|null;
 }

@@ -1,23 +1,18 @@
-<form (submit)="onAddPost(addPost)" #addPost="ngForm">
-
-    <!-- user inputs -->
-    <input type="text" ngModel name="username" placeholder="Username" required minlength="1" #enteredUsername="ngModel" />
-
-    <br>
-
-    <input type="text" ngModel name="date" placeholder="Date" required #enteredDate="ngModel" />
-
-    <br>
-
-    <input type="text" ngModel name="department" placeholder="Department" required minlength="1"
-        #enteredDepartment="ngModel" />
-
-    <br>
-    <input type="text" ngModel name="postContent" placeholder="Post Content" required minlength="1"
-        #enteredpostContent="ngModel" />
-    <br>
-
-    <button type="submit">Create Post</button>
 
 
-</form>
+<br>
+<mat-card>
+    <form (submit)="onAddPost(addPost)" #addPost="ngForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Create Post</mat-label>
+            <textarea matInput cols="30" rows="10" maxlength="500" required ngModel pattern="^.{1,500}$"
+                name="postContent" #enteredpostContent="ngModel" placeholder="Post Content"></textarea>
+            <!-- <mat-hint>{{enteredpostContent.value.length}} / 500</mat-hint> -->
+            <mat-error *ngIf="enteredpostContent.invalid">{{postError}}</mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Post</button>
+
+
+
+    </form>
+</mat-card>
