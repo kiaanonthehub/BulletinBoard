@@ -23,9 +23,15 @@ export class NavComponentComponent implements OnInit {
   }
 
   onLogout() {
-    //logs the user out and returns them to the login page
-    this.authService.logout();
-    this.router.navigateByUrl('/login');
+
+
+    if (confirm("Are you sure you want to logout ?") == true) {
+      //logs the user out and returns them to the login page
+      this.authService.logout();
+      this.router.navigateByUrl('/login');
+    } else {
+      return;
+    }
   }
 
 }

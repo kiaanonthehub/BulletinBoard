@@ -36,6 +36,8 @@ export class SignupComponent implements OnInit {
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enterpassword),
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enteredDepartment)
       );
+
+      alert('Account : ' + signupform.value.enterusername+' has successfully been created.\nPlease Log In.')
     }
   }
 }
