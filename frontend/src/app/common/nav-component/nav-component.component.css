@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     align-content: space-between;
-    background-color: #3f51b5;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
         .nav-item {

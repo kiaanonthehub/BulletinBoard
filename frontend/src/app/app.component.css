@@ -13,7 +13,8 @@ h1 {
     color: white;
     text-shadow: 5px;
     text-align: center;
-    font-size: large;
+    font: size 60px;;
+    font-style: oblique;
 }
 
 hr {
@@ -27,7 +28,6 @@ nav {
     text-align: center;
 }
 
-mat-toolbar{
-    background-color: #303f9f;
+mat-toolbar {
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
-
