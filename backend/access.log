@@ -852,3 +852,11 @@ REQ	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> POST| URL -> /api/posts	| S
 RES	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 40.313 ms
 REQ	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
 RES	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 34.769 ms
+REQ	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 3.122 ms
+REQ	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 146.832 ms
+REQ	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.491 ms
+REQ	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:23:29:54 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 37.484 ms
