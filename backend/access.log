@@ -588,3 +588,267 @@ REQ	| DATE -> 04/Nov/2022:12:14:40 +0000	| METHOD -> OPTIONS| URL -> /api/posts	
 RES	| DATE -> 04/Nov/2022:12:14:40 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.488 ms
 REQ	| DATE -> 04/Nov/2022:12:14:40 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
 RES	| DATE -> 04/Nov/2022:12:14:40 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 38.227 ms
+REQ	| DATE -> 04/Nov/2022:12:15:24 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:15:24 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 1.066 ms
+REQ	| DATE -> 04/Nov/2022:12:15:24 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1","department":"Military Veterans"}
+RES	| DATE -> 04/Nov/2022:12:15:25 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 500	| RESPONSE TIME -> 785.693 ms
+REQ	| DATE -> 04/Nov/2022:12:15:31 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:15:31 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 1.259 ms
+REQ	| DATE -> 04/Nov/2022:12:15:31 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj@gmail.com","password":"Password1","department":"Military Veterans"}
+RES	| DATE -> 04/Nov/2022:12:15:31 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 500	| RESPONSE TIME -> 204.565 ms
+REQ	| DATE -> 04/Nov/2022:12:16:53 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:16:53 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 1.868 ms
+REQ	| DATE -> 04/Nov/2022:12:16:53 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaan.maharaj@outlook.com","password":"Password1","department":"Military Veterans"}
+RES	| DATE -> 04/Nov/2022:12:16:54 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 201	| RESPONSE TIME -> 293.444 ms
+REQ	| DATE -> 04/Nov/2022:12:19:02 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:19:02 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 0.834 ms
+REQ	| DATE -> 04/Nov/2022:12:19:02 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"liammaharaj@gmail.com","password":"Password1","department":"Basic Education"}
+RES	| DATE -> 04/Nov/2022:12:19:02 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 201	| RESPONSE TIME -> 235.415 ms
+REQ	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 1.824 ms
+REQ	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 301.145 ms
+REQ	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.659 ms
+REQ	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:19:19 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 35.725 ms
+REQ	| DATE -> 04/Nov/2022:12:22:21 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:22:21 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.846 ms
+REQ	| DATE -> 04/Nov/2022:12:22:21 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:22:21 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 35.230 ms
+REQ	| DATE -> 04/Nov/2022:12:23:13 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:13 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.719 ms
+REQ	| DATE -> 04/Nov/2022:12:23:13 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:14 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 37.102 ms
+REQ	| DATE -> 04/Nov/2022:12:23:27 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:27 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.527 ms
+REQ	| DATE -> 04/Nov/2022:12:23:27 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:27 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 62.166 ms
+REQ	| DATE -> 04/Nov/2022:12:23:29 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:29 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 33.722 ms
+REQ	| DATE -> 04/Nov/2022:12:23:32 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:32 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.718 ms
+REQ	| DATE -> 04/Nov/2022:12:23:32 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:32 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 35.263 ms
+REQ	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 1.079 ms
+REQ	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 324.755 ms
+REQ	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.512 ms
+REQ	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:23:46 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 36.079 ms
+REQ	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 1.301 ms
+REQ	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 202.736 ms
+REQ	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.616 ms
+REQ	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:30:48 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 34.681 ms
+REQ	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 1.197 ms
+REQ	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 286.513 ms
+REQ	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.567 ms
+REQ	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:32:52 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 34.306 ms
+REQ	| DATE -> 04/Nov/2022:12:32:56 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:32:56 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 39.197 ms
+REQ	| DATE -> 04/Nov/2022:12:33:01 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:33:01 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.836 ms
+REQ	| DATE -> 04/Nov/2022:12:33:01 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:33:01 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 48.903 ms
+REQ	| DATE -> 04/Nov/2022:12:33:19 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:33:19 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.387 ms
+REQ	| DATE -> 04/Nov/2022:12:33:19 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:33:19 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 37.714 ms
+REQ	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 1.475 ms
+REQ	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 297.873 ms
+REQ	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.755 ms
+REQ	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:45:45 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 37.754 ms
+REQ	| DATE -> 04/Nov/2022:12:46:10 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:46:10 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.988 ms
+REQ	| DATE -> 04/Nov/2022:12:46:10 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 04/Nov/2022:12:46:10 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 36.100 ms
+REQ	| DATE -> 05/Nov/2022:10:59:25 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:10:59:25 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 3.380 ms
+REQ	| DATE -> 05/Nov/2022:11:40:08 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:40:08 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 5.741 ms
+REQ	| DATE -> 05/Nov/2022:11:40:08 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 05/Nov/2022:11:40:09 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 514.824 ms
+REQ	| DATE -> 05/Nov/2022:11:40:09 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:40:09 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.487 ms
+REQ	| DATE -> 05/Nov/2022:11:40:09 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:40:09 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 33.455 ms
+REQ	| DATE -> 05/Nov/2022:11:40:17 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:40:17 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 0.215 ms
+REQ	| DATE -> 05/Nov/2022:11:40:17 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj9@gmail.com","password":"Password1"}
+RES	| DATE -> 05/Nov/2022:11:40:17 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 201	| RESPONSE TIME -> 31.532 ms
+REQ	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 0.368 ms
+REQ	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","password":"Password1"}
+RES	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 150.480 ms
+REQ	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.229 ms
+REQ	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:10 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 31.502 ms
+REQ	| DATE -> 05/Nov/2022:11:44:26 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:26 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.234 ms
+REQ	| DATE -> 05/Nov/2022:11:44:26 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:26 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 30.883 ms
+REQ	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6364451815b066fa403fcf55	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6364451815b066fa403fcf55	| STATUS -> 200	| RESPONSE TIME -> 2.671 ms
+REQ	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> DELETE| URL -> /api/posts/6364451815b066fa403fcf55	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> DELETE| URL -> /api/posts/6364451815b066fa403fcf55	| STATUS -> 200	| RESPONSE TIME -> 46.670 ms
+REQ	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6363d3b0f9f245dd6fae57e8	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6363d3b0f9f245dd6fae57e8	| STATUS -> 200	| RESPONSE TIME -> 0.386 ms
+REQ	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> DELETE| URL -> /api/posts/6363d3b0f9f245dd6fae57e8	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:28 +0000	| METHOD -> DELETE| URL -> /api/posts/6363d3b0f9f245dd6fae57e8	| STATUS -> 200	| RESPONSE TIME -> 49.417 ms
+REQ	| DATE -> 05/Nov/2022:11:44:29 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6363d2c2f9f245dd6fae57e1	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:29 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6363d2c2f9f245dd6fae57e1	| STATUS -> 200	| RESPONSE TIME -> 0.493 ms
+REQ	| DATE -> 05/Nov/2022:11:44:29 +0000	| METHOD -> DELETE| URL -> /api/posts/6363d2c2f9f245dd6fae57e1	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:29 +0000	| METHOD -> DELETE| URL -> /api/posts/6363d2c2f9f245dd6fae57e1	| STATUS -> 200	| RESPONSE TIME -> 39.337 ms
+REQ	| DATE -> 05/Nov/2022:11:44:30 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6363c2c2f9f245dd6fae5728	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:30 +0000	| METHOD -> OPTIONS| URL -> /api/posts/6363c2c2f9f245dd6fae5728	| STATUS -> 200	| RESPONSE TIME -> 0.415 ms
+REQ	| DATE -> 05/Nov/2022:11:44:30 +0000	| METHOD -> DELETE| URL -> /api/posts/6363c2c2f9f245dd6fae5728	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:30 +0000	| METHOD -> DELETE| URL -> /api/posts/6363c2c2f9f245dd6fae5728	| STATUS -> 200	| RESPONSE TIME -> 35.971 ms
+REQ	| DATE -> 05/Nov/2022:11:44:34 +0000	| METHOD -> OPTIONS| URL -> /api/posts/635bae38235df30de6663525	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:34 +0000	| METHOD -> OPTIONS| URL -> /api/posts/635bae38235df30de6663525	| STATUS -> 200	| RESPONSE TIME -> 0.276 ms
+REQ	| DATE -> 05/Nov/2022:11:44:34 +0000	| METHOD -> DELETE| URL -> /api/posts/635bae38235df30de6663525	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:44:34 +0000	| METHOD -> DELETE| URL -> /api/posts/635bae38235df30de6663525	| STATUS -> 200	| RESPONSE TIME -> 36.316 ms
+REQ	| DATE -> 05/Nov/2022:11:45:52 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:45:52 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.288 ms
+REQ	| DATE -> 05/Nov/2022:11:45:52 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p"}
+RES	| DATE -> 05/Nov/2022:11:45:52 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 59.661 ms
+REQ	| DATE -> 05/Nov/2022:11:45:52 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:45:52 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 34.158 ms
+REQ	| DATE -> 05/Nov/2022:11:46:02 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:46:02 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 1.191 ms
+REQ	| DATE -> 05/Nov/2022:11:46:02 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:46:02 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 40.083 ms
+REQ	| DATE -> 05/Nov/2022:11:46:03 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664cf015b066fa403fcfce	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:46:03 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664cf015b066fa403fcfce	| STATUS -> 200	| RESPONSE TIME -> 1.055 ms
+REQ	| DATE -> 05/Nov/2022:11:46:03 +0000	| METHOD -> DELETE| URL -> /api/posts/63664cf015b066fa403fcfce	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:46:03 +0000	| METHOD -> DELETE| URL -> /api/posts/63664cf015b066fa403fcfce	| STATUS -> 200	| RESPONSE TIME -> 39.705 ms
+REQ	| DATE -> 05/Nov/2022:11:46:33 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:46:33 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.259 ms
+REQ	| DATE -> 05/Nov/2022:11:46:33 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "}
+RES	| DATE -> 05/Nov/2022:11:46:33 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 43.817 ms
+REQ	| DATE -> 05/Nov/2022:11:46:33 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:46:34 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 30.644 ms
+REQ	| DATE -> 05/Nov/2022:11:51:01 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:01 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.261 ms
+REQ	| DATE -> 05/Nov/2022:11:51:01 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:01 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 31.059 ms
+REQ	| DATE -> 05/Nov/2022:11:51:36 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:36 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 0.244 ms
+REQ	| DATE -> 05/Nov/2022:11:51:36 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+REQ	| DATE -> 05/Nov/2022:11:51:38 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:38 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 0.250 ms
+REQ	| DATE -> 05/Nov/2022:11:51:38 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+REQ	| DATE -> 05/Nov/2022:11:51:38 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:38 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 0.358 ms
+REQ	| DATE -> 05/Nov/2022:11:51:38 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+REQ	| DATE -> 05/Nov/2022:11:51:39 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:39 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 0.365 ms
+REQ	| DATE -> 05/Nov/2022:11:51:39 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+REQ	| DATE -> 05/Nov/2022:11:51:44 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:44 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 0.210 ms
+REQ	| DATE -> 05/Nov/2022:11:51:44 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+REQ	| DATE -> 05/Nov/2022:11:51:44 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:44 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 0.284 ms
+REQ	| DATE -> 05/Nov/2022:11:51:44 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:51:45 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 6715.283 ms
+RES	| DATE -> 05/Nov/2022:11:51:45 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 7573.827 ms
+RES	| DATE -> 05/Nov/2022:11:51:45 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 1446.730 ms
+RES	| DATE -> 05/Nov/2022:11:51:45 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 1804.478 ms
+RES	| DATE -> 05/Nov/2022:11:51:45 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 6821.779 ms
+RES	| DATE -> 05/Nov/2022:11:51:46 +0000	| METHOD -> DELETE| URL -> /api/posts/63664d1915b066fa403fcfd3	| STATUS -> 200	| RESPONSE TIME -> 9635.325 ms
+REQ	| DATE -> 05/Nov/2022:11:53:43 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:53:43 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.235 ms
+REQ	| DATE -> 05/Nov/2022:11:53:43 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "}
+RES	| DATE -> 05/Nov/2022:11:53:43 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 41.840 ms
+REQ	| DATE -> 05/Nov/2022:11:53:43 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:53:43 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 30.808 ms
+REQ	| DATE -> 05/Nov/2022:11:53:55 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664ec715b066fa403fcfdd	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:53:55 +0000	| METHOD -> OPTIONS| URL -> /api/posts/63664ec715b066fa403fcfdd	| STATUS -> 200	| RESPONSE TIME -> 0.389 ms
+REQ	| DATE -> 05/Nov/2022:11:53:55 +0000	| METHOD -> DELETE| URL -> /api/posts/63664ec715b066fa403fcfdd	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:53:55 +0000	| METHOD -> DELETE| URL -> /api/posts/63664ec715b066fa403fcfdd	| STATUS -> 200	| RESPONSE TIME -> 34.549 ms
+REQ	| DATE -> 05/Nov/2022:11:54:39 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:54:39 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.215 ms
+REQ	| DATE -> 05/Nov/2022:11:54:39 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."}
+RES	| DATE -> 05/Nov/2022:11:54:39 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 40.681 ms
+REQ	| DATE -> 05/Nov/2022:11:54:39 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:54:39 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 30.627 ms
+REQ	| DATE -> 05/Nov/2022:11:55:57 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:55:57 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.302 ms
+REQ	| DATE -> 05/Nov/2022:11:55:57 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."}
+RES	| DATE -> 05/Nov/2022:11:55:57 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 51.065 ms
+REQ	| DATE -> 05/Nov/2022:11:55:57 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:55:57 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 32.345 ms
+REQ	| DATE -> 05/Nov/2022:11:56:17 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:56:17 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.215 ms
+REQ	| DATE -> 05/Nov/2022:11:56:17 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1"}
+RES	| DATE -> 05/Nov/2022:11:56:22 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 4417.083 ms
+REQ	| DATE -> 05/Nov/2022:11:56:22 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:56:22 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 33.741 ms
+REQ	| DATE -> 05/Nov/2022:11:56:41 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:56:41 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.312 ms
+REQ	| DATE -> 05/Nov/2022:11:56:41 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaanmaharaj7@gmail.com","department":"Basic Education","date":"Sat Nov 05 2022","postContent":"Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."}
+RES	| DATE -> 05/Nov/2022:11:56:42 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 40.990 ms
+REQ	| DATE -> 05/Nov/2022:11:56:42 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:56:42 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 46.564 ms
+REQ	| DATE -> 05/Nov/2022:11:57:24 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:57:24 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 0.212 ms
+REQ	| DATE -> 05/Nov/2022:11:57:24 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"st10116983@vcconnect.edu.za","password":"Password1","department":"Employment and Labour"}
+RES	| DATE -> 05/Nov/2022:11:57:24 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 201	| RESPONSE TIME -> 163.571 ms
+REQ	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 0.229 ms
+REQ	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"st10116983@vcconnect.edu.za","password":"Password1"}
+RES	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 126.069 ms
+REQ	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.358 ms
+REQ	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:57:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 32.883 ms
+REQ	| DATE -> 05/Nov/2022:11:58:13 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:58:13 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.262 ms
+REQ	| DATE -> 05/Nov/2022:11:58:13 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"st10116983@vcconnect.edu.za","department":"Employment and Labour","date":"Sat Nov 05 2022","postContent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus justo, tristique eget congue sed, pulvinar et urna. In ac orci mollis, semper justo vitae, tincidunt leo. Sed commodo euismod odio, et egestas turpis dictum ut. Nam eget sapien facilisis, fermentum massa in, porttitor augue. Duis cursus, eros non facilisis consectetur, nibh sem varius dui, eget congue elit dui non leo. Quisque aliquam hendrerit imperdiet. Etiam ut velit et urna vestibulum pulvinar. "}
+RES	| DATE -> 05/Nov/2022:11:58:13 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 44.640 ms
+REQ	| DATE -> 05/Nov/2022:11:58:13 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:58:13 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 35.550 ms
+REQ	| DATE -> 05/Nov/2022:11:58:24 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:58:24 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.236 ms
+REQ	| DATE -> 05/Nov/2022:11:58:24 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"st10116983@vcconnect.edu.za","department":"Employment and Labour","date":"Sat Nov 05 2022","postContent":"Duis id sem et diam congue aliquet sit amet vitae ligula. Cras maximus a elit non faucibus. Curabitur tempor lorem eu lacus rhoncus, tempor maximus leo pharetra. Phasellus pharetra ultrices ante, maximus rhoncus felis accumsan ut. Quisque eu leo in orci aliquet finibus. Nullam luctus arcu sit amet sapien pretium, sit amet molestie dui vestibulum."}
+RES	| DATE -> 05/Nov/2022:11:58:24 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 46.915 ms
+REQ	| DATE -> 05/Nov/2022:11:58:24 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:58:25 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 35.223 ms
+REQ	| DATE -> 05/Nov/2022:11:58:50 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:58:50 +0000	| METHOD -> OPTIONS| URL -> /api/user/signup	| STATUS -> 200	| RESPONSE TIME -> 0.219 ms
+REQ	| DATE -> 05/Nov/2022:11:58:50 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaan.maharaj@outlook.com","password":"Password1","department":"Social Development"}
+RES	| DATE -> 05/Nov/2022:11:58:51 +0000	| METHOD -> POST| URL -> /api/user/signup	| STATUS -> 500	| RESPONSE TIME -> 100.559 ms
+REQ	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> OPTIONS| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 1.121 ms
+REQ	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaan.maharaj@outlook.com","password":"Password1"}
+RES	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> POST| URL -> /api/user/login	| STATUS -> 200	| RESPONSE TIME -> 117.335 ms
+REQ	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.202 ms
+REQ	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:13 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 304	| RESPONSE TIME -> 37.287 ms
+REQ	| DATE -> 05/Nov/2022:11:59:36 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:36 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.333 ms
+REQ	| DATE -> 05/Nov/2022:11:59:36 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaan.maharaj@outlook.com","department":"Military Veterans","date":"Sat Nov 05 2022","postContent":"Ut at consequat quam. Donec efficitur at massa vulputate vehicula. Nulla facilisi. Nam odio urna, vehicula non velit in, tempus tincidunt risus. Quisque in tincidunt elit. Ut ac diam eu odio venenatis condimentum. Phasellus lobortis erat tellus, at vehicula elit porttitor sit amet. "}
+RES	| DATE -> 05/Nov/2022:11:59:36 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 42.293 ms
+REQ	| DATE -> 05/Nov/2022:11:59:36 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:36 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 35.432 ms
+REQ	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> OPTIONS| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 0.204 ms
+REQ	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {"username":"kiaan.maharaj@outlook.com","department":"Military Veterans","date":"Sat Nov 05 2022","postContent":"Ut posuere pretium gravida. Quisque ut consequat libero, a commodo tellus. Etiam vel eros ut ex mollis convallis vel eget nunc. Nullam eget dui in erat venenatis facilisis et gravida neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec sit amet euismod mi, a sagittis nunc. Nam et ante placerat, maximus ipsum viverra, tempus odio. Mauris ipsum diam, volutpat sit amet ligula sit amet, interdum gravida eros. "}
+RES	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> POST| URL -> /api/posts	| STATUS -> 201	| RESPONSE TIME -> 40.313 ms
+REQ	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> -	| RESPONSE TIME -> - ms	|BODY -> REQ BODY -> {}
+RES	| DATE -> 05/Nov/2022:11:59:49 +0000	| METHOD -> GET| URL -> /api/posts	| STATUS -> 200	| RESPONSE TIME -> 34.769 ms

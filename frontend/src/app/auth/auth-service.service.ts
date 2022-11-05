@@ -9,11 +9,13 @@ import { Router } from '@angular/router';
 })
 export class AuthServiceService {
 
+  // declarations
   private token: string | undefined;
   private loggedIn = new Subject<boolean>();
 
   constructor(private http: HttpClient, private router: Router) { }
 
+  // signup method
   signup(userusername: string | null, userpassword: string | null, userdepartment: string | null) {
     const authData: AuthData = { username: userusername, password: userpassword, department: userdepartment }
     this.http.post('https://localhost:3000/api/user/signup', authData)
@@ -23,6 +25,7 @@ export class AuthServiceService {
       });
   }
 
+  // login method
   login(userusername: string | null, userpassword: string | null) {
 
     const authData = { username: userusername, password: userpassword };
@@ -36,10 +39,12 @@ export class AuthServiceService {
       });
   }
 
+  // method to return token
   getToken() {
     return this.token;
   }
 
+  // method to check if a user is logged in 
   checkLogin() {
     if (!this.token) {
       return false;
@@ -48,10 +53,12 @@ export class AuthServiceService {
     }
   }
 
+  // returns observable 
   getUpdatedLogin() {
     return this.loggedIn.asObservable();
   }
 
+  // logout method
   logout() {
     //clears the session token
     this.token = undefined;

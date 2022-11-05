@@ -12,6 +12,7 @@ export class NavComponentComponent implements OnInit {
 
   constructor(public authService: AuthServiceService, private router: Router) { }
 
+  // declarations
   private loginSub: Subscription = new Subscription;
   isLoggedIn: boolean = false;
 
@@ -23,8 +24,7 @@ export class NavComponentComponent implements OnInit {
   }
 
   onLogout() {
-
-
+    // confirmation dialog
     if (confirm("Are you sure you want to logout ?") == true) {
       //logs the user out and returns them to the login page
       this.authService.logout();

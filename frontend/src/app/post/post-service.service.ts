@@ -12,8 +12,6 @@ import jwt_decode from 'jwt-decode';
 })
 export class PostServiceService {
 
-  // private postdisplay: { _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string }[] = [];
-  // private updatedPostDisplay = new Subject<{ _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string }[]>();
 
   private postdisplay: { _id: string, _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string, __v: string }[] = [];
   private updatedPostDisplay = new Subject<{ _id: string, _username: string, username: string, _date: string, date: string, _department: string, department: string, _postContent: string, postContent: string, __v: string }[]>();

@@ -7,7 +7,7 @@ import { PostDisplayComponent } from './post/post-display/post-display.component
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from '../../src/app/auth/signup/signup.component';
 
-
+// routes for navigation
 const routes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'posts', component: PostDisplayComponent },

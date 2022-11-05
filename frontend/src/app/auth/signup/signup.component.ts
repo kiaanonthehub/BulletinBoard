@@ -10,6 +10,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class SignupComponent implements OnInit {
 
+  // decalre error messages 
   usernameError: string = 'Please enter a valid username';
   passwordError: string = 'Please enter a password that conatains lowercase, uppercase letters and at least one number';
   departmentError: string = 'Please Select a Department';
@@ -19,6 +20,7 @@ export class SignupComponent implements OnInit {
 
   public showPassword: boolean = false;
 
+  // toggele to hide/show password componenet
   public togglePasswordVisibility(): void {
     this.showPassword = !this.showPassword;
   }
@@ -31,13 +33,14 @@ export class SignupComponent implements OnInit {
       return;
     } else {
 
+      // sanitize display
       this.authservice.signup(
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enterusername),
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enterpassword),
         this.sanitizer.sanitize(SecurityContext.HTML, signupform.value.enteredDepartment)
       );
 
-      alert('Account : ' + signupform.value.enterusername+' has successfully been created.\nPlease Log In.')
+      alert('Account : ' + signupform.value.enterusername + ' has successfully been created.\nPlease Log In.')
     }
   }
 }

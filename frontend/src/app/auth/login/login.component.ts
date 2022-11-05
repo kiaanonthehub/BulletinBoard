@@ -13,11 +13,13 @@ export class LoginComponent implements OnInit {
 
   constructor(public authservice: AuthServiceService, private router: Router, protected sanitizer: DomSanitizer) { }
 
+  // decalre error messages
   emailError: string = 'Please enter a valid email address';
   passwordError: string = 'Enter your password';
 
   public showPassword: boolean = false;
 
+  // toggele to hide/show password componenet
   public togglePasswordVisibility(): void {
     this.showPassword = !this.showPassword;
   }
@@ -29,6 +31,7 @@ export class LoginComponent implements OnInit {
     if (form.invalid) {
       return;
     } else {
+      // sanitize display
       this.authservice.login(
         this.sanitizer.sanitize(SecurityContext.HTML, form.value.enterusername),
         this.sanitizer.sanitize(SecurityContext.HTML, form.value.enterpassword)
